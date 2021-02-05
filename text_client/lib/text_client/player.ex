@@ -14,7 +14,7 @@ defmodule TextClient.Player do
     end
 
     def play(game = %State{tally: %{game_state: :bad_guess}}) do
-        continue_with_message(game, "Good guess!")
+        continue_with_message(game, "Bad guess")
     end
 
     def play(game = %State{tally: %{game_state: :already_used}}) do
